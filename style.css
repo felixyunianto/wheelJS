@@ -9,6 +9,7 @@ body {
     font-family: Open Sans;
     display: flex;
     justify-content: center;
+    /* margin-left: 20px; */
     align-items: center;
     height: 100vh;
     overflow: hidden;
@@ -17,6 +18,7 @@ body {
 
 .mainbox {
     position: relative;
+    margin-top: -120px;
     width: 500px;
     height: 500px;
 }
@@ -117,6 +119,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0 3px 3px 0 #717171;
+    cursor: pointer;
 }
 
 .b2 {
@@ -132,6 +135,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0 3px 3px 0 #717171;
+    cursor: pointer;
 }
 
 /* .box2 {
@@ -159,4 +163,19 @@ span {
 
 .spin:active {
     font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }

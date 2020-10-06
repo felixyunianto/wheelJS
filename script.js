@@ -4,35 +4,36 @@ function Spinner() {
 
     var deg = Math.floor(Math.random() * (x - y) + y);
     document.querySelector('.box').style.transform = "rotate(" + deg + "deg)"
+    document.querySelector('.image-results').src = './img/tanda_tanya.png'
 }
 document.querySelector('#image1').addEventListener('click', function () {
-    alert('1')
+    document.querySelector('.image-results').src = './img/MacBook - 1.png'
 })
 
 document.querySelector('#image2').addEventListener('click', function () {
-    alert('2')
+    document.querySelector('.image-results').src = './img/MacBook - 2.png'
 })
 
 document.querySelector('#image3').addEventListener('click', function () {
-    alert('3')
+    alert('Spin lagi')
 })
 
 document.querySelector('#image4').addEventListener('click', function () {
-    alert('4')
+    document.querySelector('.image-results').src = './img/MacBook - 3.png'
 })
 
 document.querySelector('#image5').addEventListener('click', function () {
-    alert('5')
+    document.querySelector('.image-results').src = './img/MacBook - 4.png'
 })
 
 document.querySelector('#image6').addEventListener('click', function () {
-    alert('6')
+    document.querySelector('.image-results').src = './img/MacBook - 5.png'
 })
 
 document.querySelector('#image7').addEventListener('click', function () {
-    alert('7')
+    alert('Spin Lagi')
 })
 
 document.querySelector('#image8').addEventListener('click', function () {
-    alert('8')
+    document.querySelector('.image-results').src = './img/MacBook - 6.png'
 })
